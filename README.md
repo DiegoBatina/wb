@@ -19,6 +19,6 @@ Test script:
 
 Status: Desenvolvido
 
-15 cenários como escopo de melhoria visando usabilidade de usuário, posteriormente definir cenários de testes.
+14 cenários como escopo de melhoria visando usabilidade de usuário, posteriormente definir cenários de testes.
 
 Status: A desenvolver
