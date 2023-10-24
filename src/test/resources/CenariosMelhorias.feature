@@ -36,13 +36,10 @@ Funcionalidade: Escopo de cenarios visto como necessario ser avaliado para melho
   Cenário: 11 - Feedback do usuario (Fornecer uma maneira para os usuarios fornecerem feedback sobre os resultados da pesquisa, como classificaçoes de relevancia ou relatorios de problemas)
 
 
-  Cenário: 12 - Cenario Responsividade (Certificar-se de que a funcionalidade de pesquisa seja responsiva e funcione bem em dispositivos moveis e desktops)
+  Cenário: 12 - Cenario Desempenho (Otimizar a pesquisa para que ela seja rapida e eficiente, especialmente se houver uma grande quantidade de conteudo a ser pesquisado)
 
 
-  Cenário: 13 - Cenario Desempenho (Otimizar a pesquisa para que ela seja rapida e eficiente, especialmente se houver uma grande quantidade de conteudo a ser pesquisado)
+  Cenário: 13 - Cenario Localizaçao (Se o blog tiver um publico internacional, considerar a localizaçao na pesquisa para fornecer resultados relevantes com base na localizaçao do usuario)
 
 
-  Cenário: 14 - Cenario Localizaçao (Se o blog tiver um publico internacional, considerar a localizaçao na pesquisa para fornecer resultados relevantes com base na localizaçao do usuario)
-
-
-  Cenário: 15 - Pesquisa avançada (Oferecer opçoes avançadas de pesquisa, como filtrar os resultados por data de publicaçao, categoria de artigos, autor ou tags especficas)
+  Cenário: 14 - Pesquisa avançada (Oferecer opçoes avançadas de pesquisa, como filtrar os resultados por data de publicaçao, categoria de artigos, autor ou tags especficas)
