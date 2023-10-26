@@ -38,11 +38,11 @@
       <version>${cucumber.version}</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>io.github.bonigarcia</groupId>
-      <artifactId>webdrivermanager</artifactId>
-      <version>5.5.3</version>
-      <scope>test</scope>
+      <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+      <dependency>
+        <groupId>io.github.bonigarcia</groupId>
+        <artifactId>webdrivermanager</artifactId>
+        <version>5.5.3</version>
     </dependency>
     <dependency>
       <groupId>org.testng</groupId>
