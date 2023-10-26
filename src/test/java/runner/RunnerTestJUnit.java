@@ -6,7 +6,7 @@ import io.cucumber.junit.CucumberOptions;
 
     @RunWith(Cucumber.class)
     @CucumberOptions(
-            tags = "@Completo",
+            tags = "@CenarioUm",
             features = "src/test/resources",
             glue = "steps",
             plugin = {"html:target/cucumber-html-report/report.html",

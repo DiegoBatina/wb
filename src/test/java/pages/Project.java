@@ -6,8 +6,8 @@ public class Project {
     public Project(Setup stepDriver) {
         driver = stepDriver;
     }
+
     public void queacessoawebcomsucesso()  {
-        driver.startweb("chrome");
         driver.openURL("https://blogdoagi.com.br/");
         try {
             Thread.sleep(1000);

@@ -15,3 +15,4 @@ Funcionalidade: Acessar com sucesso a pagina e executar em duas aborgens de tama
     E insiro no campo de busca o valor "Investidores" em modo mobile
     Quando clico em Pesquisar em modo mobile
     Então valido meu resultado de busca mobile
+    E poaska

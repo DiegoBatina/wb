@@ -1,18 +1,23 @@
 package support;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.github.bonigarcia.wdm.managers.EdgeDriverManager;
+import io.github.bonigarcia.wdm.managers.FirefoxDriverManager;
 import org.junit.Assert;
 import org.openqa.selenium.*;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import java.util.concurrent.TimeUnit;
 
 public class Setup {
     public static WebDriver driver;
     private static final long DEFAULT_WAIT_TIMEOUT = 40;
     //Open browser dimension web
-    public void startweb(String parBrowser) {
+    public void startWeb(String parBrowser) {
         String title;
         try {
             title = driver.getTitle();
@@ -27,6 +32,18 @@ public class Setup {
                     driver = new ChromeDriver(chromeOptions);
                     driver.manage().window().maximize();
                     break;
+                case "firefox":
+                    FirefoxDriverManager.getInstance().setup();
+                    FirefoxOptions firefoxOptions = new FirefoxOptions();
+                    driver = new FirefoxDriver(firefoxOptions);
+                    driver.manage().window().maximize();
+                    break;
+                case "edge":
+                    EdgeDriverManager.getInstance().setup();
+                    EdgeOptions Options = new EdgeOptions();
+                    driver = new EdgeDriver(Options);
+                    driver.manage().window().maximize();
+                    break;
                 default:
             }
         }
@@ -36,28 +53,6 @@ public class Setup {
         if (size < 1400) {
             driver.manage().window().setSize(new Dimension(1920, 1080));
         }
-    }
-    //Open browser dimension mobile
-    public void startmobile(String parBrowser) {
-        String title;
-        try {
-            title = driver.getTitle();
-        } catch (Exception e) {
-            title = "ERROR";
-        }
-        if (title.equals("ERROR")) {
-            switch (parBrowser) {
-                case "chrome":
-                    WebDriverManager.chromedriver().setup();
-                    ChromeOptions chromeOptions = new ChromeOptions();
-                    driver = new ChromeDriver(chromeOptions);
-                    driver.manage().window();
-                    break;
-                default:
-            }
-        }
-        driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_TIMEOUT, TimeUnit.SECONDS);
-        driver.manage().window().setSize(new Dimension(400, 792));
     }
     private String getAttributeType(String... parType) {
         String type;
