@@ -3,7 +3,6 @@ package support;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.github.bonigarcia.wdm.managers.EdgeDriverManager;
 import io.github.bonigarcia.wdm.managers.FirefoxDriverManager;
-import io.github.bonigarcia.wdm.managers.OperaDriverManager;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,9 +11,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.opera.OperaDriver;
-import org.openqa.selenium.opera.OperaOptions;
-
 import java.util.concurrent.TimeUnit;
 
 public class Setup {
@@ -48,12 +44,6 @@ public class Setup {
                     driver = new EdgeDriver(Options);
                     driver.manage().window().maximize();
                     break;
-//                case "opera":
-//                    OperaDriverManager.getInstance().setup();
-//                    OperaOptions options = new OperaOptions();
-//                    driver = new OperaDriver(options);
-//                    driver.manage().window().maximize();
-//                    break;
                 default:
             }
         }

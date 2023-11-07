@@ -38,8 +38,7 @@
       <version>${cucumber.version}</version>
       <scope>test</scope>
     </dependency>
-      <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
-      <dependency>
+     <dependency>
         <groupId>io.github.bonigarcia</groupId>
         <artifactId>webdrivermanager</artifactId>
         <version>5.5.3</version>
@@ -80,12 +79,6 @@
   <version>3.4.5</version>
   <type>maven-plugin</type>
 </dependency>
-      <dependency>
-          <groupId>org.seleniumhq.selenium</groupId>
-          <artifactId>selenium-opera-driver</artifactId>
-          <version>4.4.0</version>
-          <scope>test</scope>
-      </dependency>
   </dependencies>
 
 </project>
