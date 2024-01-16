@@ -1,24 +1,26 @@
 # wb
 
-Bem vindo!
+Welcome!
 
 Testing approach: 
-Usuário interagir com campo de busca da página https://blogdoagi.com.br/
+- User interacts with the search field on the page https://blogdoagi.com.br/
 
 IDE:
-IntelliJ
+- IntelliJ
 
 Operating system used:
-MacOS Catalina version 10.15.7
+- MacOS Catalina version 10.15.7
 
 Framework: 
-Java + Selenium + Cucumber + TestNG + TestJUnit + Java 16 + Maven 12
+- Java + Selenium + Cucumber + TestNG(optional execution) + TestJUnit + Java 16 + Maven 12
 
 Test script:
-1 cenário, com abordagem de dimensões de tela para WEB(1920x1080.
+- 1 scenario, with screen dimensions approach for WEB (1920x1080).
+Status: Developed
 
-Status: Desenvolvido
+Browsers used with driver manager method:
+- Firefox, Chrome, Edge.
 
-14 cenários como escopo de melhoria visando usabilidade de usuário, posteriormente definir cenários de testes.
-
-Status: A desenvolver
+Scope:
+- 14 scenarios as a scope for improvement aimed at user usability, later defining test scenarios.
+Status: Developing
