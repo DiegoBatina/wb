@@ -2,12 +2,16 @@ package support;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.github.bonigarcia.wdm.managers.EdgeDriverManager;
+import io.github.bonigarcia.wdm.managers.FirefoxDriverManager;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+
 import java.util.concurrent.TimeUnit;
 
 public class Setup {
@@ -33,6 +37,12 @@ public class Setup {
                     EdgeDriverManager.getInstance().setup();
                     EdgeOptions Options = new EdgeOptions();
                     driver = new EdgeDriver(Options);
+                    driver.manage().window().maximize();
+                    break;
+                case "firefox":
+                    FirefoxDriverManager.getInstance().setup();
+                    FirefoxOptions firefoxOptions = new FirefoxOptions();
+                    driver = new FirefoxDriver(firefoxOptions);
                     driver.manage().window().maximize();
                     break;
                 default:
