@@ -16,7 +16,7 @@ public class Project {
         }
     }
     public void visualizoEClicoNaLupaDeBusca() {
-        driver.click("search-open","id");
+        driver.click("//*[@class='ast-search-menu-icon slide-search']","xpath");
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
@@ -24,7 +24,7 @@ public class Project {
         }
     }
     public void insiroNoCampoDeBuscaOValor(String arg0){
-        driver.findElement("//*[@class='desktop-search']//input[@type='search']","xpath").sendKeys(arg0);
+        driver.findElem("//*[@class='ast-search-menu-icon slide-search ast-dropdown-active']//input[@type='search']","xpath").sendKeys(arg0);
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
@@ -32,7 +32,7 @@ public class Project {
         }
     }
     public void clicoEmPesquisar() {
-        driver.click("//input[@value='Pesquisar']","xpath");
+        driver.click("//*[@class='slide-search astra-search-icon']","xpath");
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
@@ -40,7 +40,7 @@ public class Project {
         }
     }
     public void validoMeuResultadoDeBusca()  {
-        driver.findElement("//*[@id='primary']/header/h1/span","xpath");
+        driver.findElem("//*[@id='primary']/header/h1/span","xpath");
         driver.assertStrings("Investidores","Investidores");
         try {
             Thread.sleep(500);

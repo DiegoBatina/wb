@@ -85,7 +85,7 @@ public class Setup {
                 return By.id(parValue);
         }
     }
-    public WebElement findElement(String parValue, String... parType) {
+    public WebElement findElem(String parValue, String... parType) {
         final By locator = getLocatorBy(parValue, parType);
         WebElement element;
         try {
@@ -95,9 +95,9 @@ public class Setup {
         }
         return element;
     }
-    public void click(String parValue, String... parType) {
-        final WebElement element = findElement(parValue, parType);
-        element.click();
+        public void click(String parValue, String... parType) {
+            final WebElement element = findElem(parValue, parType);
+            element.click();
     }
     public void openURL(String parURL) {
         driver.get(parURL);
@@ -109,7 +109,7 @@ public class Setup {
         driver.quit();
     }
     public void sendKeys(String parText, String parValue, String parType) {
-        final WebElement element = findElement(parValue, parType);
+        final WebElement element = findElem(parValue, parType);
         element.clear();
         element.sendKeys(parText);
     }
