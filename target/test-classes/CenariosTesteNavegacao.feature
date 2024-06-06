@@ -1,6 +1,6 @@
 #language: pt
 @Completo
-Funcionalidade: Acessar com sucesso a pagina e executar em duas aborgens de tamanho web/mobile
+Funcionalidade: Acessar com sucesso a pagina e realizar busca simples
 @CenarioUm
   Cenário: 01 Abordagem Padrao WEB- Pesquisa por palavras-chave(inserir palavras-chave na caixa de pesquisa para encontrar artigos relacionados a busca)
     Dado que acesso a web com sucesso
