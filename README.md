@@ -15,7 +15,7 @@ Framework:
 - Java + Selenium + Cucumber + TestNG(optional execution) + TestJUnit + Java 16 + Maven 12
 
 Test script:
-- 1 scenario, with screen dimensions approach for WEB (1920x1080).
+- 1 scenario, simple search in with screen dimensions approach for WEB (1920x1080).
 Status: Developed
 
 Browsers used with driver manager method:
