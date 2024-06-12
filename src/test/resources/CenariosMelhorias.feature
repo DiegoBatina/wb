@@ -1,6 +1,6 @@
 #language: pt
 
-Funcionalidade: Escopo de cenarios visto como necessario ser avaliado para melhoria futura visando experiencia de usuario
+Funcionalidade: Backlog de cenarios visto como necessario ser avaliado para melhoria futura visando experiencia de usuario
 
 
   Cenário: 01 - Ordenaçao de resultados (Permitir que os usuarios classifiquem os resultados da pesquisa com base em criterios como data de publicaçao, relevancia ou numero de visualizaçoes)
